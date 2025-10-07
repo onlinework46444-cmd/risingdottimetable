@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rising Dot | Freelancer Timetable</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --rd-red: #EE2A2B;
+      --rd-navy: #0E1A24;
+      --rd-blue: #2583BA;
+      --note: #9CD4FF;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--rd-navy);
+      font-family: 'Open Sans', sans-serif;
+      color: #F2F5F7;
+      padding: 32px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      background: rgba(255,255,255,0.04);
+      border-radius: 20px;
+      box-shadow: 0 16px 50px rgba(0,0,0,0.4);
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--rd-red), var(--rd-blue));
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: #fff;
+    }
+
+    .header img {
+      height: 60px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .header-text h1 {
+      font-family: 'Righteous', sans-serif;
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .header-text small {
+      font-weight: 600;
+      font-size: 14px;
+      color: #F2F5F7;
+    }
+
+    .content {
+      padding: 32px;
+    }
+
+    h2 {
+      font-family: 'Righteous', sans-serif;
+      font-size: 20px;
+      color: var(--rd-blue);
+      margin-bottom: 16px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 24px;
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      background: var(--rd-blue);
+      color: #fff;
+      transform: scale(1.02);
+      box-shadow: 0 8px 24px rgba(37,131,186,0.5);
+    }
+
+    .card h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: #F2F5F7;
+    }
+
+    .card p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 1em;
+      color: #E9F1F7;
+      margin-bottom: 6px;
+    }
+
+    .note {
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.88em;
+      color: var(--note);
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-weight: 600;
+      background: var(--rd-blue);
+      color: #fff;
+      font-size: 0.95em;
+    }
+
+    @media (max-width: 600px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .content {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="assets/logo.png" alt="Rising Dot Logo">
+      <div class="header-text">
+        <h1>Rising Dot</h1>
+        <small>Rising together in the world of digital dots</small>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>Freelancer Daily Timetable</h2>
+
+      <div class="card">
+        <h3>10:00 AM – 11:00 AM</h3>
+        <p>Wake up, Freshen up, Breakfast</p>
+        <div class="note">Light breakfast & short walk for energy boost.</div>
+      </div>
+
+      <div class="card">
+        <h3>11:00 AM – 3:00 PM</h3>
+        <p>Work Session 1</p>
+        <div class="note">Focused start — no distractions, full productivity zone.</div>
+      </div>
+
+      <div class="card">
+        <h3>3:00 PM – 4:00 PM</h3>
+        <p>Break / Lunch / Power Nap</p>
+        <div class="note">Eat well & take a 20–30 min nap for refreshment.</div>
+      </div>
+
+      <div class="card">
+        <h3>4:00 PM – 7:00 PM</h3>
+        <p>Work Session 2</p>
+        <div class="note">Continue tasks calmly, finish mid-day goals.</div>
+      </div>
+
+      <div class="card">
+        <h3>7:00 PM – 9:00 PM</h3>
+        <p>Dinner / Relax / Family Time</p>
+        <div class="note">Disconnect & recharge — talk, walk, or unwind.</div>
+      </div>
+
+      <div class="card">
+        <h3>9:00 PM – 12:30 AM</h3>
+        <p>Work Session 3</p>
+        <div class="note">Prime time for foreign clients — stay focused, deliver results.</div>
+      </div>
+
+      <div class="card">
+        <h3>12:30 AM – 1:00 AM</h3>
+        <p>Free Time / Wind Down</p>
+        <div class="note">Relax, light scroll or music — prepare to sleep by 1 AM.</div>
+      </div>
+
+      <div class="card">
+        <h3>1:00 AM – 10:00 AM</h3>
+        <p>Sleep / Full Rest</p>
+        <div class="note">Full 9-hour sleep — koi uthna nahi, koi kaam nahi. Proper rest = fresh mind & better focus.</div>
+      </div>
+    </div>
+
+    <footer>© Rising Dot — Organized Work, Peaceful Mind</footer>
+  </div>
+</body>
+</html>
